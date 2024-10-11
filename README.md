@@ -1,3 +1,12 @@
+## Custom settings
+
+To get the entire configuration with custom submodules, run:
+
+```sh
+git clone --recurse-submodules https://github.com/denius/ohmyzsh.git ~/.ohmyzsh
+```
+
+# Original README
 <p align="center"><img src="https://ohmyzsh.s3.amazonaws.com/omz-ansi-github.png" alt="Oh My Zsh"></p>
 
 Oh My Zsh is an open source, community-driven framework for managing your [zsh](https://www.zsh.org/)
