@@ -40,7 +40,7 @@ plugins=(zkbd git-prompt command-not-found debian zsh-syntax-highlighting fzf vi
 # plugins=(zkbd git command-not-found debian zsh-syntax-highlighting ripgrep fzf vim colorize)
 #plugins=(zkbd command-not-found debian zsh-syntax-highlighting ripgrep fzf vim colorize colored-man-pages)
 
-source $ZSH/oh-my-zsh.sh
+source $ZSH/ohmyzsh.sh
 
 # Customize to your needs...
 
