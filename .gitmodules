@@ -1,0 +1,3 @@
+[submodule "plugins/vim"]
+	path = plugins/vim
+	url = git://github.com/nviennot/zsh-vim-plugin.git
