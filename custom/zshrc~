@@ -1,0 +1,38 @@
+# Path to your oh-my-zsh configuration.
+export ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+export ZSH_THEME="fishy-mod"
+#export ZSH_THEME="blinks-mod"
+
+# Set to this to use case-sensitive completion
+# export CASE_SENSITIVE="true"
+
+# Comment this out to disable weekly auto-update checks
+export DISABLE_AUTO_UPDATE="true"
+
+# Uncomment following line if you want to disable colors in ls
+# export DISABLE_LS_COLORS="true"
+
+# Uncomment following line if you want to disable autosetting terminal title.
+# export DISABLE_AUTO_TITLE="true"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Example format: plugins=(rails git textmate ruby lighthouse)
+#plugins=(save-tilde zkbd git deb command-not-found debian gem rails zsh-syntax-highlighting dircycle vim)
+#plugins=(save-tilde zkbd git deb command-not-found debian zsh-syntax-highlighting dircycle)
+plugins=(save-tilde zkbd git command-not-found debian zsh-syntax-highlighting dircycle)
+
+source $ZSH/oh-my-zsh.sh
+
+# Customize to your needs...
+
+# the default connect for virsh
+export VIRSH_DEFAULT_CONNECT_URI="qemu:///system"
+
+# Bash Style Backward Kill via
+# http://stackoverflow.com/questions/444951/zsh-stop-backward-kill-word-on-directory-delimiter?rq=1
+export WORDCHARS='*?_-.[]~=/&;:!#$%^(){}<>'
