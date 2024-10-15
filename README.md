@@ -4,6 +4,7 @@ To get the entire configuration with custom submodules, run:
 
 ```sh
 git clone --recurse-submodules https://github.com/denius/ohmyzsh.git ~/.ohmyzsh
+ln -s ~/.ohmyzsh/custom/zshrc ~/.zshrc
 ```
 
 # Original README
