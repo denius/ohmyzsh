@@ -1,0 +1,30 @@
+## load environment-modules
+#shell=`/usr/bin/basename \`/bin/ps -p $$ -ocomm=\``
+#if [ -f /usr/share/modules/init/$shell ]
+#then
+#  . /usr/share/modules/init/$shell
+#else
+#  . /usr/share/modules/init/sh
+#fi
+
+# Specify autoloaded on startup environment modules
+# Load environment modules like:
+# List all available environment modules:
+# module avail
+# List all loaded environment modules:
+# module list
+
+##module load openmpi
+#module load gambit
+#module load fluent
+#module load cfx
+#module load icemcfd
+#module load paraview
+#module load tecplot
+#module load eclipse
+#module load paraview
+#module load julia
+
+alias l='ls -lrtF'
+alias ll='ls -lF'
+
