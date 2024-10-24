@@ -7,12 +7,15 @@ export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 if [ -d "/opt/tecplot/360ex_2022r2/bin" ] ; then
     export PATH="$PATH:/opt/tecplot/360ex_2022r2/bin"
 fi
-if [ -d "/opt/paraview/ParaView-5.12.0-MPI-Linux-Python3.10-x86_64/bin" ] ; then
-    export PATH="$PATH:/opt/paraview/ParaView-5.12.0-MPI-Linux-Python3.10-x86_64/bin"
+if [ -d "/opt/paraview/ParaView-5.13.1-MPI-Linux-Python3.10-x86_64/bin" ] ; then
+    export PATH="$PATH:/opt/paraview/ParaView-5.13.1-MPI-Linux-Python3.10-x86_64/bin"
 fi
-if [ -d "$HOME/tmp/paraview_build/bin" -a -x "$HOME/tmp/paraview_build/bin/paraview" ] ; then
-    export PATH="$PATH:$HOME/tmp/paraview_build/bin"
-fi
+# if [ -d "/opt/paraview/ParaView-5.12.0-MPI-Linux-Python3.10-x86_64/bin" ] ; then
+#     export PATH="$PATH:/opt/paraview/ParaView-5.12.0-MPI-Linux-Python3.10-x86_64/bin"
+# fi
+# if [ -d "$HOME/tmp/paraview_build/bin" -a -x "$HOME/tmp/paraview_build/bin/paraview" ] ; then
+#     export PATH="$PATH:$HOME/tmp/paraview_build/bin"
+# fi
 if [ -d "/opt/Fluent.Inc/bin" ] ; then
     export PATH="$PATH:/opt/Fluent.Inc/bin"
 fi
