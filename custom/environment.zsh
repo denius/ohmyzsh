@@ -53,6 +53,13 @@ if [ -d "/usr/local/cuda/bin" ] ; then
     # export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$PATH"
 fi
 
+
+if [ -d "$HOME/var/aider" ] ; then
+    # via https://stackoverflow.com/a/16296567/16881249
+    export PYTHONPATH="$HOME/var/aider${:+$PYTHONPATH:PYTHONPATH}"
+    # export PYTHONPATH="${PYTHONPATH:+$PYTHONPATH:}$HOME/var/aider"
+fi
+
 export OPENBLAS_NUM_THREADS=14
 #export OPENBLAS_NUM_THREADS=1
 #export OMP_NUM_THREADS=14
