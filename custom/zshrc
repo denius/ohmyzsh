@@ -57,7 +57,7 @@ export WORDCHARS='*?_-.[]~=/&;:!#$%^(){}<>'
 
 # !! Contents within this block are managed by juliaup !!
 
-path=('/home/denis/.juliaup/bin' $path)
+path=("$HOME/.juliaup/bin" $path)
 export PATH
 
 # <<< juliaup initialize <<<

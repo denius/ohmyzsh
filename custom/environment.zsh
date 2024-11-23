@@ -20,12 +20,12 @@ if [ -d "/opt/Fluent.Inc/bin" ] ; then
     export PATH="$PATH:/opt/Fluent.Inc/bin"
 fi
 
-if [ -d "/home/denis/.cargo/bin" ] ; then
-    export PATH="$PATH:/home/denis/.cargo/bin"
+if [ -d "$HOME/.cargo/bin" ] ; then
+    export PATH="$PATH:$HOME/.cargo/bin"
 fi
 
-if [ -d "/home/denis/.gem/ruby/2.7.0/bin" ] ; then
-    export PATH="$PATH:/home/denis/.gem/ruby/2.7.0/bin"
+if [ -d "$HOME/.gem/ruby/2.7.0/bin" ] ; then
+    export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
 fi
 
 if [ -d "/home/linuxbrew/.linuxbrew/Cellar/ripgrep/14.0.3/bin" ] ; then
@@ -37,8 +37,8 @@ if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ; then
     export INFOPATH="$INFOPATH:/home/linuxbrew/.linuxbrew/share/info"
 fi
 
-if [ -d "/home/denis/go/bin" ] ; then
-    export PATH="$PATH:/home/denis/go/bin"
+if [ -d "$HOME/go/bin" ] ; then
+    export PATH="$PATH:$HOME/go/bin"
 fi
 if [ -d "$HOME/.julia/bin" ] ; then
     export PATH="$PATH:$HOME/.julia/bin"
