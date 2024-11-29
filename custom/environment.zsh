@@ -28,8 +28,8 @@ if [ -d "$HOME/.gem/ruby/2.7.0/bin" ] ; then
     export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
 fi
 
-if [ -d "/home/linuxbrew/.linuxbrew/Cellar/ripgrep/14.0.3/bin" ] ; then
-    export PATH="/home/linuxbrew/.linuxbrew/Cellar/ripgrep/14.0.3/bin:$PATH"
+if [ -d "$(find /home/linuxbrew/.linuxbrew/Cellar/ripgrep -type d -regextype sed -regex '.*[0-9]\+\.[0-9]\+\.[0-9]\+')/bin" ] ; then
+    export PATH="$(find /home/linuxbrew/.linuxbrew/Cellar/ripgrep -type d -regextype sed -regex '.*[0-9]\+\.[0-9]\+\.[0-9]\+')/bin:$PATH"
 fi
 if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ; then
     export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"

@@ -22,7 +22,7 @@ export DISABLE_AUTO_UPDATE="true"
 # export DISABLE_AUTO_TITLE="true"
 
 # added by denis: fzf plugin options
-FZF_BASE="/home/linuxbrew/.linuxbrew/Cellar/fzf/0.44.1"
+FZF_BASE=$(find /home/linuxbrew/.linuxbrew/Cellar/fzf -type d -regextype sed -regex '.*[0-9]\+\.[0-9]\+\.[0-9]\+')
 # added by denis: colorize plugin option
 #export ZSH_COLORIZE_STYLE="colorful"
 export ZSH_COLORIZE_STYLE="material"
