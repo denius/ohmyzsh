@@ -36,7 +36,7 @@ export ZSH_COLORIZE_STYLE="material"
 #plugins=(save-tilde zkbd git deb command-not-found debian zsh-syntax-highlighting dircycle)
 #plugins=(zkbd git command-not-found debian zsh-syntax-highlighting ripgrep fzf vim colored-man-pages colorize)
 # plugins=(zkbd git-prompt command-not-found debian zsh-syntax-highlighting ripgrep fzf vim colorize)
-plugins=(zkbd git-prompt command-not-found debian zsh-syntax-highlighting fzf vim colorize)
+plugins=(zkbd git-prompt command-not-found debian zsh-syntax-highlighting fzf vim colorize brew)
 # plugins=(zkbd git command-not-found debian zsh-syntax-highlighting ripgrep fzf vim colorize)
 #plugins=(zkbd command-not-found debian zsh-syntax-highlighting ripgrep fzf vim colorize colored-man-pages)
 
