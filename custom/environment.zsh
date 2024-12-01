@@ -1,5 +1,5 @@
 
-export LC_ALL=
+# export LC_ALL=
 
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
