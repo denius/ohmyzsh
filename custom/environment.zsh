@@ -28,9 +28,21 @@ if [ -d "$HOME/.gem/ruby/2.7.0/bin" ] ; then
     export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
 fi
 
-if [ -d "$(find /home/linuxbrew/.linuxbrew/Cellar/ripgrep -type d -regextype sed -regex '.*[0-9]\+\.[0-9]\+\.[0-9]\+')/bin" ] ; then
-    export PATH="$(find /home/linuxbrew/.linuxbrew/Cellar/ripgrep -type d -regextype sed -regex '.*[0-9]\+\.[0-9]\+\.[0-9]\+')/bin:$PATH"
+RGPATH="$(find /home/linuxbrew/.linuxbrew/Cellar/ripgrep -type d -regextype sed -regex '.*[0-9]\+\.[0-9]\+\.[0-9]\+')/bin"
+if [ -d "$RGPATH" ] ; then
+    export PATH="$RGPATH:$PATH"
 fi
+
+LUAPATH="$(find /home/linuxbrew/.linuxbrew/Cellar/lua -type d -regextype sed -regex '.*[0-9]\+\.[0-9]\+\.[0-9]\+')/bin"
+if [ -d "$LUAPATH" ] ; then
+    export PATH="$LUAPATH:$PATH"
+fi
+
+LUAROCKSPATH="$(find /home/linuxbrew/.linuxbrew/Cellar/luarocks -type d -regextype sed -regex '.*[0-9]\+\.[0-9]\+\.[0-9]\+')/bin"
+if [ -d "$LUAROCKSPATH" ] ; then
+    export PATH="$LUAROCKSPATH:$PATH"
+fi
+
 if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ; then
     export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
     export MANPATH="$MANPATH:/home/linuxbrew/.linuxbrew/share/man"
