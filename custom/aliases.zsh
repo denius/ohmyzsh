@@ -20,7 +20,7 @@ alias gtk='gitk --all'
 
 #unalias afind
 
-alias ag='ag --ignore="*.mtx" --smart-case'
+# alias ag='ag --ignore="*.mtx" --smart-case'
 
 
 # some more aliases
@@ -46,6 +46,7 @@ alias rgp='rg --passthru '
 alias lsof='lsof -w'
 alias psl='ps -efw'
 alias fd='fdfind '
+unalias ap
 #alias a='LANGUAGE=en sudo aptitude'
 alias a='sudo aptitude'
 alias as='aptitude search'
