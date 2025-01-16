@@ -52,6 +52,9 @@ export VIRSH_DEFAULT_CONNECT_URI="qemu:///system"
 # http://stackoverflow.com/questions/444951/zsh-stop-backward-kill-word-on-directory-delimiter?rq=1
 export WORDCHARS='*?_-.[]~=/&;:!#$%^(){}<>'
 
+# extend zsh-syntax-highlighting plugin patterns
+ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets)
+
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # added by fzf
 
 # >>> juliaup initialize >>>
