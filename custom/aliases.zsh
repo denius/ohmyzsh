@@ -134,6 +134,10 @@ alias -s lay=tec360
 alias -s dbs=gambit
 alias -s gp=gnuplot
 
+alias ol='ollama list | tail -n+2 | sort'
+alias olt='ollama list | tail -n+2 | tac'
+alias ops='ollama ps'
+
 # Global aliases -- These do not have to be
 # at the beginning of the command line.
 alias -g G='|rg'
