@@ -43,6 +43,11 @@ if [ -d "$LUAROCKSPATH" ] ; then
     export PATH="$LUAROCKSPATH:$PATH"
 fi
 
+PANDOCPATH="$(find /home/linuxbrew/.linuxbrew/Cellar/pandoc -type d -regextype sed -regex '.*[0-9]\+\.[0-9]\+\.[0-9]\+')/bin"
+if [ -d "$PANDOCPATH" ] ; then
+    export PATH="$PANDOCPATH:$PATH"
+fi
+
 if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ; then
     export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
     export MANPATH="$MANPATH:/home/linuxbrew/.linuxbrew/share/man"
