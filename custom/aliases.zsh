@@ -136,8 +136,9 @@ alias -s gp=gnuplot
 
 alias xml=xmlstarlet
 
-alias ol='ollama list | tail -n+2 | sort'
-alias olt='ollama list | tail -n+2 | tac'
+alias ols='ollama list | tail -n+2 | sort'
+alias olss='ollama list | tail -n+2 | sort -k3,3 -g'
+alias olsr='ollama list | tail -n+2 | tac'
 alias ops='ollama ps'
 
 # Global aliases -- These do not have to be
