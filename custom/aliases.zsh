@@ -40,7 +40,8 @@ alias less=$PAGER
 #alias mc='LANGUAGE=en_US.UTF-8 mc'
 #alias hgrep='history|ag'
 alias hG='history|grep -i '
-alias HG='history|grep -i '
+#alias HG='history|grep -i '
+alias HG='history | rg -i '
 # alias HJ="ag --nonumbers \"^[\t]\" $HOME/.julia/logs/repl_history.jl | sed \"s/^[\t]//\" -"
 alias rgp='rg --passthru '
 alias lsof='lsof -w'

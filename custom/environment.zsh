@@ -13,7 +13,7 @@ fi
 # fi
 # PVPATH="/opt/paraview/ParaView-5.12.0-MPI-Linux-Python3.10-x86_64/bin"
 # PVPATH="/opt/paraview/ParaView-5.13.1-MPI-Linux-Python3.10-x86_64/bin"
-PVPATH="/opt/paraview/ParaView-5.13.2-MPI-Linux-Python3.10-x86_64/bin"
+PVPATH="/opt/paraview/ParaView-5.13.3-MPI-Linux-Python3.10-x86_64/bin"
 if [ -d "$PVPATH" ] ; then
     export PATH="$PATH:$PVPATH"
 fi
