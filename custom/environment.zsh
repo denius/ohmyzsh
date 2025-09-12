@@ -63,6 +63,11 @@ if [ -d "$HOME/.julia/bin" ] ; then
     export PATH="$PATH:$HOME/.julia/bin"
 fi
 
+# `volta` -- is an `pipx` for node
+if [ -d "$HOME/.volta/bin" ] ; then
+    export PATH="$HOME/.volta/bin:$PATH"
+fi
+
 if [ -d "/usr/local/cuda/bin" ] ; then
     export PATH="/usr/local/cuda/bin:$PATH"
     # don't export lib path because julia error:
