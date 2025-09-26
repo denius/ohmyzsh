@@ -84,6 +84,11 @@ if [ -d "$HOME/var/aider" ] ; then
     # export PYTHONPATH="${PYTHONPATH:+$PYTHONPATH:}$HOME/var/aider"
 fi
 
+# opencode -- AI code agent, https://github.com/sst/opencode
+if [ -d "$HOME/.opencode/bin" ] ; then
+    export PATH="$HOME/.opencode/bin:$PATH"
+fi
+
 export OPENBLAS_NUM_THREADS=14
 #export OPENBLAS_NUM_THREADS=1
 #export OMP_NUM_THREADS=14
